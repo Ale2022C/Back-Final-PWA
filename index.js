@@ -14,10 +14,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api/productos', require('./routes/producto'));
 
-app.get('/', (req, res) =>{
-    res.send('Conectado al Back')
-});
-
 app.listen(PORT, () => {
     console.log(`El servidor está corriendo perfectamente en el puerto ${PORT}`);
 })
