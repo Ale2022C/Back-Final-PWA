@@ -17,7 +17,6 @@ app.use('/api/productos', require('./routes/producto'));
 
 app.get('/', (req, res) =>{
     res.send(`Conectado correctamente al Backend de la aplicacion`)
-    Date.now();
 });
 
 app.listen(PORT, () => {
