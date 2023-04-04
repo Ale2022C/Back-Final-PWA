@@ -3,6 +3,7 @@ const conectarDB = require('./config/db');
 const cors = require("cors");
 const productos = require('./controllers/productoController');
 
+
 //CREAMOS EL SERVIDOR
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -17,6 +18,7 @@ app.use('/api/productos', require('./routes/producto'));
 
 app.get('/', (req, res) =>{
     res.send(`Conectado correctamente al Backend de la aplicacion`)
+    
 });
 
 app.listen(PORT, () => {
